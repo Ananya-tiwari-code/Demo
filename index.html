@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Airport Cab</title>
+    <style>
+        p{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style:normal;
+        }
+    </style> 
+    <style>
+        div {
+            color:white;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color:black;background-color:coral;">Book Airport Cab</h1>
+        <div class="icons">
+            <span>✈</span>
+            <span>🚗</span>
+        </div>
+    </header>
+    <main>
+        <section class="bookings-received">
+            <h2>Bookings Received</h2>
+            <p>We will share the driver details 30 mins prior to the pickup time.</p>
+            <p class="vehicle-type">Sedan</p>
+        </section>
+        <section class="update-booking">
+            <h2>Update your Locations</h2>
+            <form action="/submit-location" method="post">
+                    <div class="location-input">
+                        <label for="pickup-location">Pick-up from Home:</label>
+                        <input type="text" id="pickup-location" name="pickup-location" value="Home" readonly>
+                    </div>
+                    <div class="location-input">
+                        <label for="dropoff-location">Drop-off at Destination:</label>
+                        <input type="text" id="dropoff-location" name="dropoff-location" value="Airport" readonly>
+                    </div>
+                
+                <button type="submit">SUBMIT</button>
+            </form>
+        </section>
+        <section class="contact-info">
+            <p>Alternatively, you can mail us at <a href="mailto:airport@cabbook.com">airport@cabbook.com</a> or call at 080-09687680</p>
+        </section>
+        <section class="service-promise">
+            <h2 style="color:crimson ;">Our Service Promise</h2>
+            <p>We are committed to providing our customers with the best airport ride experience. In case you need any personalized support or assistance at the airport or your destinations, do not hesitate to share with our executives.</p>
+            <p>Wish you a Happy and safe Journey!</p>
+        </section>
+    </main>
+</body>
+</html>
